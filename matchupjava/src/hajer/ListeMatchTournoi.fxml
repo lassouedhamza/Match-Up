@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hajer.ListeMatchTournoiController">
+   <children>
+      <TableView fx:id="tableview" layoutX="144.0" layoutY="123.0" prefHeight="206.0" prefWidth="286.0">
+        <columns>
+          <TableColumn fx:id="coltype" prefWidth="83.0" text="Type" visible="false" />
+          <TableColumn fx:id="coldate" prefWidth="111.0" text="Date" />
+            <TableColumn fx:id="colnbjoueurs" prefWidth="174.0" text="Nombre de joueurs" />
+        </columns>
+      </TableView>
+      <Label layoutX="57.0" layoutY="46.0" text="Liste de Match de Tournoi" textFill="#2bbfbd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfrechercher" layoutX="144.0" layoutY="88.0" text="Rechercher" />
+   </children>
+</AnchorPane>

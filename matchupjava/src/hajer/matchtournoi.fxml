@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hajer.MatchtournoiController">
+   <children>
+      <TextField fx:id="tfnomtournoi" layoutX="283.0" layoutY="51.0" prefHeight="17.0" prefWidth="67.0" />
+      <TextField fx:id="tfnbjoueurs" layoutX="186.0" layoutY="198.0" prefHeight="17.0" prefWidth="104.0" />
+      <TextField fx:id="tfdate" layoutX="185.0" layoutY="165.0" prefHeight="17.0" prefWidth="104.0" />
+      <ChoiceBox fx:id="tftype" layoutX="185.0" layoutY="132.0" prefHeight="25.0" prefWidth="104.0" />
+      <Button fx:id="ajouter" layoutX="228.0" layoutY="236.0" mnemonicParsing="false" onAction="#AjouterOnClick" style="-fx-background-color: #2bbfbd; -fx-background-radius: 8;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="91.0" layoutY="137.0" text="Type" textFill="#2bbfbd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="169.0" text="Date" textFill="#2bbfbd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="201.0" text="Nombre de joueurs" textFill="#2bbfbd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="52.0" text="Nom du tournoi" textFill="#2bbfbd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="liste" layoutX="300.0" layoutY="301.0" mnemonicParsing="false" onAction="#ListeOnClick" prefHeight="13.0" prefWidth="177.0" style="-fx-background-color: #5a80c6;" text="Liste des matchs du tournoi" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableview" layoutX="300.0" layoutY="110.0" prefHeight="183.0" prefWidth="296.0" visible="false">
+         <columns>
+            <TableColumn fx:id="coltype" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="coldate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="colnbjoueurs" prefWidth="169.0" text="Nombre de joueurs" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tfrechercher" layoutX="366.0" layoutY="97.0" promptText="Par Type" visible="false" />
+   </children>
+</AnchorPane>
